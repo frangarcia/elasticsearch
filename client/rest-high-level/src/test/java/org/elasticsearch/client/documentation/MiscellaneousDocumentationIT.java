@@ -195,7 +195,7 @@ public class MiscellaneousDocumentationIT extends ESRestHighLevelClientTestCase 
         RestHighLevelClient client = new RestHighLevelClient(
                 RestClient.builder(
                         new HttpHost("localhost", 9200, "http"),
-                        new HttpHost("localhost", 9201, "http")));
+                        new HttpHost("localhost", 9201, "http")).build());
         //end::rest-high-level-client-init
 
         //tag::rest-high-level-client-close
